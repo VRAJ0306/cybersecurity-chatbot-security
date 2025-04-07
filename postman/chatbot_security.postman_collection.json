@@ -1,0 +1,24 @@
+{
+  "info": {
+    "_postman_id": "e50d1f6a-3b1c-4f29-97c7-7b8e1f4eaa44",
+    "name": "Chatbot Security API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Chat Endpoint - Valid API Key",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "x-api-key", "value": "your-secure-api-key" },
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"message\": \"Hello test!\"\n}"
+        },
+        "url": { "raw": "http://localhost:5000/chat", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["chat"] }
+      }
+    }
+  ]
+}
