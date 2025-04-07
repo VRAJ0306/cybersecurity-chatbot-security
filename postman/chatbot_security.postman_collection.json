@@ -10,15 +10,31 @@
       "request": {
         "method": "POST",
         "header": [
-          { "key": "x-api-key", "value": "{{API_KEY}}"  },
-          { "key": "Content-Type", "value": "application/json" }
+          {
+            "key": "x-api-key",
+            "value": "{{API_KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\n  \"message\": \"Hello test!\"\n}"
         },
-        "url": { "raw": "http://localhost:5000/chat", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["chat"] }
-      }
+        "url": {
+          "raw": "http://localhost:5000/chat",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["chat"]
+        }
+      },
+      "response": []
     }
   ]
 }
+
