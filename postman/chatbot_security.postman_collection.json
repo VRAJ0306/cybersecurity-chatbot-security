@@ -10,7 +10,7 @@
       "request": {
         "method": "POST",
         "header": [
-          { "key": "x-api-key", "value": "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" },
+          { "key": "x-api-key", "value": "{{API_KEY}}"  },
           { "key": "Content-Type", "value": "application/json" }
         ],
         "body": {
