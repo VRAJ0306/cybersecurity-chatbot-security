@@ -12,6 +12,10 @@ limiter = Limiter(app, key_func=get_remote_address, default_limits=["10 per minu
 def before_request():
     log_request(request)
 
+@app.route('/')
+def home():
+    return "Welcome to the Chatbot Security API!"
+
 @app.route('/chat', methods=['POST'])
 @require_api_key
 @limiter.limit("5 per minute")
